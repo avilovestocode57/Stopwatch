@@ -1,0 +1,126 @@
+
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+@font-face {
+  font-family: 'StopwatchFont';
+  src: url('./stopwatch.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+ }
+
+body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+}
+
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-grid{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 42px; */
+    padding: 22px;
+    
+    border-radius: 8px;
+    
+}
+
+.display-module{
+    font-family: 'StopwatchFont',serif;
+    font-size: 52px;
+    font-weight: bold;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    margin: 64px 48px;
+    background-color: #f1f3f5;
+    padding: 18px;
+    width: 90%;
+    
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); */
+    /* border: 2px solid rgb(18, 190, 29); */
+    
+}
+
+    /* position: absolute; */
+    /* top: 64px;
+    left: 8%;
+    width: 80%; */
+
+.button-module{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 24px;
+    /* border: 2px solid red; */
+}
+.icon{
+    stroke:black;
+    width:48px;
+    height: 48px;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+    border-radius: 50%;
+}
+.btn1{
+    
+}
+.btn2{
+    
+}
+button{
+    background-color: #fff;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .main-grid{
+        width: 92%;
+    }
+    .button-module{
+        width: 80%;
+    }
+    .display-module{
+        width: 98%;
+    }
+    .icon{
+        width:36px;
+        height: 36px;
+    }
+    .display-module{
+        font-size: 39px;
+    }
+  /* CSS that runs when screen ≤ 768px */
+}
